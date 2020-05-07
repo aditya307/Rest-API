@@ -1,0 +1,71 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/ddb07f8753.js" crossorigin="anonymous"></script>
+    <link rel = "stylesheet" href="https://bootswatch.com/4/superhero/bootstrap.min.css">
+    <title>Libros</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text center">
+            <i class="fas fa-book-open text-primary"></i>
+        My<span class="text-primary"> Libros</span></h1> 
+        <form id = "book-form">
+            <div class="form-group">
+                <label for = "title">Title</label>
+                <input type="text" id="title"
+                class="form-control" name="title">
+            </div>
+            <div class="form-group">
+                <label for = "author">Author</label>
+                <input type="text" id="author"
+                class="form-control" name="author">
+            </div>
+            <div class="form-group">
+                <label for = "genre">Genre</label>
+                <input type="text" id="genre"
+                class="form-control" name="genre">
+            </div>
+            <div class="form-group">
+                <label for = "description">Description</label>
+                <input type="text" id="description"
+                class="form-control" name="description">
+            </div>
+            <div class="form-group">
+                <label for = "publisher">Publisher</label>
+                <input type="text" id="pulisher"
+                class="form-control" name="publisher">
+            </div>
+            <div class="form-group">
+                <label for = "page">Pages</label>
+                <input type="text" id="page"
+                class="form-control" name="page">
+            </div>
+            <input type="submit" value="Add Book" class="btn btn-primary btn-block">
+            <br>
+            <!-- <input type="data" value="Show Details" class="btn btn-primary btn-block"> -->
+
+        </form>
+        <table class="table table-striped mt-5" id="books">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                    <th>Description</th>
+                    <th>Publisher</th>
+                    <th>Pages</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="book-list">
+            </tbody>
+        </table>
+   </div>
+   <script src="../client.js"></script>
+</body>
+
+</html>
