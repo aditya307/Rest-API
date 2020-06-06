@@ -53,9 +53,19 @@ app.put('/api/genres/:_id',(req,res)=>{
         res.json(genre);
     });
 });
-app.delete('/api/genres/:_id',(req,res)=>{
-    var id = req.params._id;
-    Genre.removeGenre(id,(err,genre)=>{
+// app.delete('/api/genres/:_id',(req,res)=>{
+//     var id = req.params._id;
+//     Genre.removeGenre(id,(err,genre)=>{
+//         if (err){
+//             throw err;
+
+//         }
+//         res.json(genre);
+//     });
+// });
+app.delete('/api/genres/name',(req,res)=>{
+    var name = req.params.name;
+    Genre.removeGenre(name,(err,genre)=>{
         if (err){
             throw err;
 

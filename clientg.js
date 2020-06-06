@@ -64,7 +64,7 @@ function getData(){
 
             document.getElementById(`del-${i}`).addEventListener("click", (e) => {
                 const td = e.target.parentElement;
-                const tr = td.parentElement;;
+                const tr = td.parentElement;
                 const name = tr.firstElementChild.innerText;
                 fetch(`L_URL${name}`, {
                     method: "DELETE",

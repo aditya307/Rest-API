@@ -37,8 +37,14 @@ module.exports.updateGenre =(id, genre, options, callback)=>{
 }
 
 //Delete Genre
-module.exports.removeGenre =(id,callback)=>{
-    var query={_id:id};
+// module.exports.removeGenre =(id,callback)=>{
+//     var query={_id:id};
+//     Genre.remove(query,callback);
+
+// }
+
+module.exports.removeGenre =(name,callback)=>{
+    var query={name};
     Genre.remove(query,callback);
 
 }
